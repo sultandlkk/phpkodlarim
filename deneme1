@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php 
+  // ""yazılan değişkenleri alır ama '' her seyi tex olarak alır
+    nesneye dayalıdır mysql ile birlikte calısır
+    //; ile biticek her zaman uzantı .php olacak
+    deişkenlerde türkce karekter kullanmayız $ ile gösterilir
+    $sayi=26; //başına sayı yazılmaz
+    $adim="Sultan";
+    $soyadim="Dölek";
+    echo '<p>Hello World</p>'; #bu benim adımdır
+    echo "sultan dolek"."<br>";
+    echo "wwww.sultandlk@gmail.com"."<br>".$sayi."<br>";
+    echo $sayi=$sayi+9;
+    echo "<br>"."benim adim ".$adim." ".$soyadim;
+    $num1=10;
+    $num2=5;
+    $toplam=$num1+$num2;
+    echo "<br> toplama sonucu: ".$toplam;
+    $cikarma=$num1-$num2;
+    echo "<br> çıkarma sonucu: ".$cikarma;
+    $carpma=$num1*$num2;
+    echo "<br> çarpma sonucu: ".$carpma;
+    $bolme=$num1/$num2;
+    echo "<br> bölme sonucu: ".$bolme;
+    $atama=40;
+    echo "<br>".$atama+=12;
+    echo "<br>".$atama/=12;
+    echo "<br>".$atama*=12;
+    echo "<br>".$atama-=12;
+    echo "<br>".$atama%=12;
+    
+    $i=5;
+    echo "<br>".$i++;//burda 6 yaptı ama hafızaya attı ekrana göstermedi
+    echo ++$i."<br>";
+    echo sqrt(25)."<br>";
+    echo pow(4,2)."<br>";
+    
+ $ad="sultan";
+ $ad1='dölek';
+    echo "benim adim:$ad soyadim:$ad1";
+    echo "<br>";
+    echo'benim adım $ad soyadim da $ad1 ';
+
+    echo "<br>";
+    echo "benim internet sitem \"www.ahoısadoı.com.tr\"";//\işsareti kaçıstır yani çift tırnak ya da tek tırnak görünsün diye ya da değişkeni tanımladığımız ismi gösterir
+    echo "<br>";
+    echo 'benim internet sitem \'www.ahoısadoı.com.tr\'';echo "<br><br>";
+    $yazi="bENIm aDim sultan";
+    echo strtolower($yazi); echo "<br>";//butun kelimeler küçük
+    echo strtoupper($yazi); echo "<br>";//butun kelimeler büyük
+    echo ucwords($yazi); echo "<br>";//kelimelerin baş harfi büyük
+    echo ucfirst($yazi); echo "<br>";//cümlenin baş harfi büyük
+    echo strlen($yazi);echo "<br>";echo "<br>";echo "<br>";
+   
+$dizi=array("1","27","3","5","19");
+    echo $dizi[0];echo "<br>";
+    print_r($dizi);echo "bu dizinin eleman sayisi ise:".count($dizi);echo "<br>";
+    sort($dizi);print_r($dizi);echo "<br>";//küçükten büyüğe sıralar
+    rsort($dizi);print_r($dizi);echo "<br>";//büyükten küçüğe sıralar
+    echo max($dizi);echo "<br>";
+    echo min($dizi);echo "<br>";
+    echo in_array("27",$dizi);echo "<br>";//doğru old için 1 değerini döndürdü
+    echo implode(" , ",$dizi);//dizimiz birleştirir. 
+$sorgu=0;
+$sorgu1=9;
+  if($sorgu!=0){
+    echo "evet doğru";
+  }else if($sorgu==0 or $sorgu1==6){
+    echo "ikiside doğru";
+  }
+  else{
+    echo "hayır yanlış";
+  }
+
+define("ad","sultan dölek");//sabit değer sağlarız
+    echo ad;
+define("www"," www.sultandölek.com.tr");
+     echo www."<br>";
+    echo __FILE__;echo "<br>";//dosya uzantısını
+     echo __LINE__;echo "<br>";//hangi çizgide kod old
+     echo PHP_VERSION;;echo "<br>";//phpnin versiyonunu
+    
+   $not=3;
+ switch($not){
+   case '1'; echo "kaldınız"; break;
+   case '2';echo "zoru zoruna geçtiniz"; break;
+   case '3';echo "geçtiniz"; break;
+   case '4';echo "mükemmelsin";break;
+   default: echo "hatalı giriş ";break;
+   
+ } 
+    
+$sayi1=399;
+$sayi2=166;
+$sayi3=766;
+    if($sayi1>$sayi2 and $sayi1>$sayi3){
+      echo "en büyük sayi ".$sayi1;
+    }else if($sayi2>$sayi1 and $sayi2>$sayi3){
+      echo "en büyük sayi ".$sayi2;
+    }else{
+      echo "en büyük sayi ".$sayi3;
+    }
+$sayi=101;
+    ECHO $sayi%2==0?"sayi çift":"sayi tek";echo "<br>";
+    if($sayi%2==0){
+      echo "sayi çifttir";
+    }
+    else{
+echo "TEKTİR";
+    }
+
+for($i=0;$i<=100;$i++){
+  echo "<br>"."yusufa aşığım";
+}
+//carpım tablosu
+for($i=1;$i<=10;$i++){
+
+  for($j=0;$j<=10;$j++){
+    echo "$i x $j=".$i*$j."<br>";
+  }
+  echo "-----"."<br>";
+}
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    ?> 
+
+</html>
